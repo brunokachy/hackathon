@@ -1,0 +1,35 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to Hackathon!
+  </h1>
+</div>
+<!-- begin login -->
+<div>
+  <div>
+    <alert></alert>
+    <form (ngSubmit)="validateLoginEmail()" class="margin-bottom-0" #loginForm="ngForm">
+      <div>
+        <input id="emailAddress" name="emailAddress" type="text" class="form-control" placeholder="Email Address" [(ngModel)]="user.emailAddress"
+          required/>
+      </div>
+      <div>
+        <input id="password" name="password" type="password" onkeypress="capLock(event)" class="form-control" placeholder="Password"
+          [(ngModel)]="user.password" required/>
+        <span>
+          <div id="capsLockCheck" class="badge badge-warning badge-square" style="visibility: hidden">Caps Lock is on.</div>
+        </span>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary btn-block btn-lg" [disabled]="!loginForm.form.valid">Sign me in</button>
+      </div>
+      <div>
+        Don't have account yet?
+        <a routerLink="/register" class="text-success" routerLinkActive="active">Register a new account</a> .
+      </div>
+      <hr />
+      <p class="text-center text-inverse">
+        &copy; Hackathon All Right Reserved 2017
+      </p>
+    </form>
+  </div>

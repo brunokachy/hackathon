@@ -1,0 +1,12 @@
+com\hbackend\email\services\EmailSetting.class
+com\hbackend\persistence\entity\portal\State_.class
+com\hbackend\persistence\services\PortalPersistence.class
+com\hbackend\email\services\EmailSetting$1.class
+com\hbackend\email\services\Emailer.class
+com\hbackend\persistence\entity\portal\PortalUser.class
+com\hbackend\persistence\services\ProjectConstant.class
+com\hbackend\persistence\services\PortalInit.class
+com\hbackend\persistence\entity\portal\PortalUser$Designation.class
+com\hbackend\persistence\services\Util.class
+com\hbackend\email\services\EmailService.class
+com\hbackend\NewSessionBean.class
